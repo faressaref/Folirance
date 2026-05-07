@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Folirance Reviews</title>
+
+<title>Folivance Reviews</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
 <div class="container">
 
 <button id="langToggle" class="lang-btn">
-<span>🌐</span> AR
+🌐 AR
 </button>
 
-<h1 id="title">Tell Us About Your Experience</h1>
+<h1 id="title">
+Tell Us About Your Experience
+</h1>
 
 <p class="desc" id="desc">
 Your feedback helps us improve our products and create a better luxury hair care experience.
@@ -27,116 +34,195 @@ Your feedback helps us improve our products and create a better luxury hair care
 <form id="reviewForm">
 
 <div class="form-group">
-<label id="nameLabel">Full Name</label>
-<input type="text" id="name" placeholder="Enter your name">
+
+<label id="nameLabel">
+Full Name
+</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your name">
+
 </div>
 
 <div class="form-group">
-<label id="emailLabel">Email Address</label>
-<input type="email" id="email" placeholder="example@email.com">
+
+<label id="emailLabel">
+Email Address
+</label>
+
+<input
+type="email"
+id="email"
+placeholder="example@email.com">
+
 </div>
 
 <div class="form-group">
-<label id="phoneLabel">Phone Number</label>
-<input type="text" id="phone" placeholder="01XXXXXXXXX">
+
+<label id="phoneLabel">
+Phone Number
+</label>
+
+<input
+type="text"
+id="phone"
+placeholder="01XXXXXXXXX">
+
 </div>
 
 <div class="form-group">
-<label id="ageLabel">Age Range</label>
+
+<label id="ageLabel">
+Age Range
+</label>
+
 <select id="age">
-<option value="">Select</option>
+
+<option value="">
+Select
+</option>
+
 <option>18-25</option>
 <option>26-35</option>
 <option>36-45</option>
 <option>45+</option>
+
 </select>
+
 </div>
 
 <div class="form-group">
-<label id="hairLabel">Hair Type</label>
+
+<label id="hairLabel">
+Hair Type
+</label>
+
 <select id="hairType">
-<option value="">Select</option>
+
+<option value="">
+Select
+</option>
+
 <option>Straight</option>
 <option>Curly</option>
 <option>Wavy</option>
 <option>Coily</option>
+
 </select>
+
 </div>
 
 <div class="form-group">
-<label id="productLabel">Which Product Did You Use?</label>
+
+<label id="productLabel">
+Which Product Did You Use?
+</label>
+
 <select id="product">
-<option value="">Select Product</option>
-<option>Intensive Treatment Spray</option>
-<option>Anti-Hair Loss Stimulating Shampoo</option>
+
+<option value="">
+Select Product
+</option>
+
+<option>
+Intensive Treatment Spray
+</option>
+
+<option>
+Anti-Hair Loss Stimulating Shampoo
+</option>
+
 </select>
+
 </div>
 
 <div class="form-group">
-<label id="rateLabel">Rate Your Experience</label>
+
+<label id="rateLabel">
+Rate Your Experience
+</label>
 
 <div class="stars">
+
 <span class="star">★</span>
 <span class="star">★</span>
 <span class="star">★</span>
 <span class="star">★</span>
 <span class="star">★</span>
+
 </div>
 
 <input type="hidden" id="rating">
+
 </div>
 
 <div class="form-group">
-<label id="improveLabel">Did you notice improvements?</label>
 
-<div class="radio-group">
-<label><input type="radio" name="improve" value="Yes"> <span id="yesText">Yes</span></label>
-<label><input type="radio" name="improve" value="No"> <span id="noText">No</span></label>
-</div>
-</div>
+<label id="likedLabel">
+What did you like the most?
+</label>
 
-<div class="form-group">
-<label id="resultsLabel">How long did it take to notice results?</label>
-<input type="text" id="results" placeholder="Example: 2 weeks">
+<textarea
+id="liked"
+placeholder="Tell us your experience"></textarea>
+
 </div>
 
 <div class="form-group">
-<label id="likedLabel">What did you like the most?</label>
-<textarea id="liked" placeholder="Tell us your experience"></textarea>
+
+<label id="improve2Label">
+What can we improve?
+</label>
+
+<textarea
+id="improve2"
+placeholder="Your opinion matters"></textarea>
+
 </div>
 
-<div class="form-group">
-<label id="improve2Label">What can we improve?</label>
-<textarea id="improve2" placeholder="Your opinion matters"></textarea>
-</div>
+<button
+class="submit-btn"
+type="submit"
+id="submitBtn">
 
-<button class="submit-btn" type="submit" id="submitBtn">
 Submit Review
+
 </button>
 
 </form>
+
 </div>
+
+<!-- POPUP -->
 
 <div class="popup" id="popup">
 
 <div class="popup-box">
 
-<h2 id="popupTitle">Thank You!</h2>
+<h2 id="popupTitle">
+Thank You!
+</h2>
 
 <p id="popupText">
 Your review has been received successfully.
 </p>
 
-<button onclick="closePopup()" id="popupBtn">
+<button
+onclick="closePopup()"
+id="popupBtn">
+
 Close
+
 </button>
 
-</div>
 </div>
 
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script src="script.js"></script>
 
 </body>
